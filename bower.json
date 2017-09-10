@@ -1,0 +1,21 @@
+{
+  "name": "montgomery-finishes",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Robert Grubbs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rgrubbs88/MontgomeryFinishes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

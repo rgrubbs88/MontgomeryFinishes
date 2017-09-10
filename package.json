@@ -1,0 +1,27 @@
+{
+  "name": "montgomery-finishes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "jquery-smooth-scroll": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-less": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgrubbs88/MontgomeryFinishes.git"
+  },
+  "author": "Robert Grubbs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rgrubbs88/MontgomeryFinishes/issues"
+  },
+  "homepage": "https://github.com/rgrubbs88/MontgomeryFinishes#readme"
+}
