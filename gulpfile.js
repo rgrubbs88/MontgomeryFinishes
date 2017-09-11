@@ -1,12 +1,14 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var less        = require('gulp-less');
+var del         = require('del');
+var runSequence = require('run-sequence');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['less'], function() {
 
     browserSync.init({
-        server: "./src"
+        server: "./build"
     });
 
     gulp.watch("src/assets/less/*.less", ['less']);
@@ -20,5 +22,18 @@ gulp.task('less', function() {
         .pipe(gulp.dest("src/assets/css"))
         .pipe(browserSync.stream());
 });
+
+gulp.task('build', function() {
+    runSequence('clean', 'copy-build')
+});
+
+gulp.task('copy-build', function() {
+    return gulp.src(["!src/assets/less/**", "src/**/*"])
+    .pipe(gulp.dest("build/"));
+});
+
+gulp.task('clean', function () {
+    return del(['./build'], {force: true});
+ });
 
 gulp.task('default', ['serve']);
