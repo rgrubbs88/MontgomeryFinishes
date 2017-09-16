@@ -9,6 +9,7 @@
     "jquery-smooth-scroll": "^2.2.0"
   },
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp-less": "^3.3.2",
     "run-sequence": "^2.1.0"
   },

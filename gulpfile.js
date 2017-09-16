@@ -8,7 +8,7 @@ var runSequence = require('run-sequence');
 gulp.task('serve', ['less'], function() {
 
     browserSync.init({
-        server: "./build"
+        server: "./src"
     });
 
     gulp.watch("src/assets/less/*.less", ['less']);

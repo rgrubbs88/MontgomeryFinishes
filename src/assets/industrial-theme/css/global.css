@@ -476,7 +476,7 @@ body #header.down {
 }
  .secondry-header .logo {
 	display: inline-block;
-	margin: 5px 14px 5px 0;
+	margin: -40px 14px 5px 0;
 }
  .secondry-header .num {
 	display: inline-block;

@@ -23,6 +23,7 @@
 	.menu-wrapper {
 		background: none !important;
 	}
+
 }
 @media only screen and (max-device-width: 1024px) {
 
@@ -589,7 +590,10 @@
  5) Mobile
  ----------------------------------------*/
 @media only screen and (max-width: 767px) {
-
+	.secondry-header .logo {
+		display: inline-block;
+		margin: 0px 14px 5px 0;
+	}
 	.info-container .about-us h2, .service-container .left-detail h2, .project-container .detai-box h2, .customer-says h2,.banner-container h3 ,.our-clients h3,.our-team-container h3,.info-container-1 .about-us h2,.service-container-2 .left-detail h2,.service-container-3 .left-detail h2,.our-testimonial-1 .heading-row h2 span{
 		font-size: 25px;
 	}
@@ -1675,6 +1679,7 @@
 }
 
 @media only screen and (max-width: 565px) {
+
 	.our-info .img-list {
 		margin-left: 0;
 	}
