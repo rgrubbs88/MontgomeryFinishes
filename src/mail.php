@@ -1,10 +1,11 @@
 <?php 
 
 // Global Configuration start: From here you can change the email-id of receiver, cc, from email-id & subject;
-$to = "vikash@theemon.com";
-$from = "industrialtemplate@theemon.com";
-$cc = "alok@sparxitsolutions.com";
-$subject = "Industrial Contact us form";
+$to = "rgrubbs88@gmail.com";
+$from = "bigpapi0788@gmail.com";
+//$cc = "alok@sparxitsolutions.com";
+
+$subject = "Montgomery Finishes Contact us form";
 // Global configuration end
 $errmasg = "";
 
@@ -31,7 +32,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
 $headers .= 'From:'.$from . "\r\n";
-$headers .= 'Cc:'.$cc . "\r\n";
+//$headers .= 'Cc:'.$cc . "\r\n";
 
 
 
