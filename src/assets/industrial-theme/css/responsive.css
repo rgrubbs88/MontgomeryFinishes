@@ -608,7 +608,8 @@
 	}
 
 	#slider.top{
-		  margin-top: 174px;
+		  /* margin-top: 174px; */
+		  margin-top: -28px;		  
 	}
 	.service-container .right-detail strong {
 		font-size: 30px;
@@ -633,6 +634,7 @@
 	
 	#header .quote {
 		top: 43px;
+		display: none;
 	}
 	#slider .detail {
 		margin-left: 0;

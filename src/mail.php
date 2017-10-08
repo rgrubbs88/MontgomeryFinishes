@@ -1,8 +1,8 @@
 <?php 
 
 // Global Configuration start: From here you can change the email-id of receiver, cc, from email-id & subject;
-$to = "rgrubbs88@gmail.com";
-$from = "bigpapi0788@gmail.com";
+$to = "aploski89@gmail.com";
+$from = "rgrubbs88@gmail.com";
 //$cc = "alok@sparxitsolutions.com";
 
 $subject = "Montgomery Finishes Contact us form";
