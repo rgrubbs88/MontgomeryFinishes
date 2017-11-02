@@ -8,7 +8,6 @@ var runSequence = require('run-sequence');
 gulp.task('serve', ['less'], function() {
 
     browserSync.init({
-   
         server: "./src"
     });
 
@@ -30,7 +29,7 @@ gulp.task('build', function() {
 
 gulp.task('copy-build', function() {
     // var pattern = "src/assets/**";
-    return gulp.src(['src/**/*', '!src/less/**'])
+    return gulp.src(['src/**/*', '!src/less**/**'])
     .pipe(gulp.dest("build/"));
 });
 

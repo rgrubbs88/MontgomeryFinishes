@@ -1,11 +1,13 @@
 <?php 
 
 // Global Configuration start: From here you can change the email-id of receiver, cc, from email-id & subject;
-$to = "montgomeryfinishes@gmail.com";
-$from = "montgomeryfinishes@gmail.com";
+$to = "rgrubbs88@gmail.com";
+
+// GoDaddy Email
+$from = "info@montgomeryfinishes.com";
 //$cc = "alok@sparxitsolutions.com";
 
-$subject = "Montgomery Finishes Contact us form";
+$subject = "Montgomery Finishes Contact Us form";
 // Global configuration end
 $errmasg = "";
 
@@ -16,7 +18,7 @@ $errmasg = "";
  
 if($email){
 $message = "<table border='0' cellpadding='2' cellspacing='2' width='600'>
-<tr><td>Name: ".$name." </td></tr>
+<tr><td><h2>Name: ".$name." </h2></td></tr>
 <tr><td>Email: ".$email."</td></tr>
 <tr><td>Subject: ".$subject."</td></tr>
 <tr><td>Message:".$msg."</td></tr>

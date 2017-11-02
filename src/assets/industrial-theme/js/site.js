@@ -103,7 +103,6 @@ $(document).ready(function() {
 		
 
 		if (posScroll > primaryH) {
-
 			$('#header').addClass('fix');
 		} else {
 			$('#header').removeClass('fix');
@@ -148,19 +147,15 @@ $(document).ready(function() {
 			$img.replaceWith($svg);
 
 		}, 'xml');
-
 	});
-
-	
 
 	if (!isMobile) {
 		animSection();
 		fadeInSection();
-
 	}
 
 	//intelligent header function
-if ($('#header').hasClass('intelligent')) {
+	if ($('#header').hasClass('intelligent')) {
 		$('#slider').addClass('top-m');
 	}
 	
@@ -222,11 +217,9 @@ $(window).load(function() {
 			$('body').removeClass('loading');
 		}
 	});
-
 });
 
 var parallax = function(id, val) {
-	
 	if ($(window).scrollTop() > id.offset().top - $(window).height() && $(window).scrollTop() < id.offset().top + id.outerHeight()) {
 		var px = parseInt(($(window).scrollTop() - (id.offset().top - $(window).height())),10);
 		
@@ -256,16 +249,14 @@ var fadeInSection = function() {
 function sliderEffect(index) {
 	$('.top-row strong').eq(index).fadeIn(1000);
 	$('.top-row strong').eq(index).siblings('strong').fadeOut(1000);
-
 }
-   var class_pr = $('body').attr('class');
-	var headerHeight = $('#header').outerHeight()
-	var st = $(window).scrollTop();
+
+var class_pr = $('body').attr('class');
+var headerHeight = $('#header').outerHeight()
+var st = $(window).scrollTop();
 var stickOnScroll = function() {
-		console.log($('#header').hasClass("intelligent"));
-		
-		if ($('#header').hasClass("intelligent")) {
-			console.log("in")
+	if ($('#header').hasClass("intelligent")) {
+			// console.log("in")
 			$('#header').removeClass('normal');
 			$('#slider').addClass('top');
 			var pos = $(window).scrollTop();
@@ -279,9 +270,9 @@ var stickOnScroll = function() {
 				} else {
 					$('#header.simple').removeClass('up')
 					$('#header.simple').addClass('fixed down')
-
 				}
 				st = pos;
+				console.log("Down Triggered");
 
 			} else {
 				$('#header.simple').removeClass('fixed down up simple')
